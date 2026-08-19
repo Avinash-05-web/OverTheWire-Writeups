@@ -17,9 +17,9 @@
 
 This repository contains my personal write-ups and notes from solving **OverTheWire wargames**.
 
-The purpose of this repository is to document my hands-on cybersecurity learning process while developing practical skills in Linux, command-line usage, networking, enumeration, authentication, and problem-solving.
+The goal of this repository is to document my hands-on cybersecurity learning process while developing practical skills in Linux, command-line usage, networking, enumeration, authentication, and problem-solving.
 
-These write-ups focus on the **approach, commands, reasoning, and concepts learned** while solving each challenge.
+Each write-up documents the **approach I used, commands I ran, challenges I encountered, and what I learned** from solving the level.
 
 ---
 
@@ -27,15 +27,15 @@ These write-ups focus on the **approach, commands, reasoning, and concepts learn
 
 ### 🐧 Bandit
 
-Bandit is focused on teaching the basics of Linux, command-line usage, and concepts that are useful when learning cybersecurity.
+Bandit focuses on the basics of Linux, command-line usage, and common concepts that are useful when learning cybersecurity.
 
 ### 📊 Progress
 
-| Wargame   |  Progress | Status         |
-| --------- | --------: | -------------- |
-| Bandit    | 2+ Levels | 🟢 In Progress |
-| Leviathan |         — | ⏳ Not Started  |
-| Natas     |         — | ⏳ Not Started  |
+| Wargame   |    Progress | Status         |
+| --------- | ----------: | -------------- |
+| Bandit    | Level 0 → 7 | 🟢 In Progress |
+| Leviathan |           — | ⏳ Not Started  |
+| Natas     |           — | ⏳ Not Started  |
 
 ---
 
@@ -51,6 +51,10 @@ OverTheWire-Writeups/
     ├── Level0-1.md
     ├── Level1-2.md
     ├── Level2-3.md
+    ├── Level3-4.md
+    ├── Level4-5.md
+    ├── Level5-6.md
+    ├── Level6-7.md
     └── ...
 ```
 
@@ -63,28 +67,54 @@ OverTheWire-Writeups/
 | 00 → 01 | Reading a file with `cat`                           | [Level 0 → 1](Bandit/Level0-1.md) |
 | 01 → 02 | Reading a file named `-`                            | [Level 1 → 2](Bandit/Level1-2.md) |
 | 02 → 03 | Handling spaces and special characters in filenames | [Level 2 → 3](Bandit/Level2-3.md) |
+| 03 → 04 | Finding hidden files                                | [Level 3 → 4](Bandit/Level3-4.md) |
+| 04 → 05 | Identifying human-readable files                    | [Level 4 → 5](Bandit/Level4-5.md) |
+| 05 → 06 | Searching by file size and permissions              | [Level 5 → 6](Bandit/Level5-6.md) |
+| 06 → 07 | Searching by user, group, and file size             | [Level 6 → 7](Bandit/Level6-7.md) |
 
 ---
 
 ## 🧠 Skills Practiced
 
-Throughout the Bandit challenges, I am practicing:
+Through the Bandit challenges, I am developing practical experience with:
 
 * 🐧 Linux fundamentals
-* 💻 Command-line usage
-* 🔐 SSH
-* 📂 File and directory manipulation
-* 🔎 Enumeration
-* 🔑 Authentication
-* 🌐 Networking fundamentals
-* 🧩 Problem-solving
+* 💻 Linux command-line usage
+* 🔐 SSH and remote authentication
+* 📂 File and directory navigation
+* 🔎 File and directory enumeration
+* 🕵️ Hidden file discovery
+* 📄 File type identification
+* 📏 File size filtering
+* 👤 User ownership
+* 👥 Group ownership
+* 🔑 Authentication and credentials
+* 🧩 Command-line problem solving
 * 🛡️ Cybersecurity fundamentals
 
 ---
 
-## 📝 Write-up Format
+## 🛠️ Commands Practiced
 
-Each challenge follows a consistent structure:
+Some of the Linux commands and techniques covered so far include:
+
+```text
+ssh
+ls
+cd
+cat
+find
+file
+xargs
+```
+
+As I progress through more levels, additional commands and techniques will be added.
+
+---
+
+## 📝 Write-up Approach
+
+Each level is documented using a consistent structure:
 
 ### 🎯 Objective
 
@@ -92,31 +122,36 @@ What the challenge requires me to find or accomplish.
 
 ### 🔎 Approach
 
-The steps and thought process I used to investigate the challenge.
+The steps and thought process I used while solving the challenge.
 
 ### 💻 Commands Used
 
-Important commands used during the challenge.
+The important commands used during the challenge.
 
-### 🧠 Explanation
+### 🧠 What I Learned
 
-An explanation of what the commands do and why they were useful.
-
-### 📚 What I Learned
-
-Important concepts or techniques learned from the challenge.
+The Linux, networking, or cybersecurity concepts learned from the level.
 
 ### 🚀 Key Takeaway
 
-The main lesson from the level.
+The main lesson from the challenge.
+
+The goal is to document the **learning process and methodology**, rather than simply providing answers.
 
 ---
 
 ## 🔒 Password Policy
 
-Passwords and challenge-specific credentials are **not intentionally published** in this repository.
+Challenge passwords and credentials are **not intentionally published** in this repository.
 
-The focus of these write-ups is on the **methodology, commands, reasoning, and cybersecurity concepts** used to solve the challenges.
+The focus of these write-ups is on:
+
+* Methodology
+* Commands
+* Reasoning
+* Troubleshooting
+* Cybersecurity concepts
+* Lessons learned
 
 ---
 
@@ -135,16 +170,23 @@ All challenges documented here are from the OverTheWire wargames platform and ar
 
 ---
 
-## 🚀 Progress
+## 🚀 Progress Log
 
-**Started:** 2026
-
-**Current Wargame:** Bandit
-
-**Status:** 🟢 In Progress
-
-> Learning cybersecurity one challenge at a time. 🔐
+| Milestone          | Status      |
+| ------------------ | ----------- |
+| Bandit Level 0 → 1 | ✅ Completed |
+| Bandit Level 1 → 2 | ✅ Completed |
+| Bandit Level 2 → 3 | ✅ Completed |
+| Bandit Level 3 → 4 | ✅ Completed |
+| Bandit Level 4 → 5 | ✅ Completed |
+| Bandit Level 5 → 6 | ✅ Completed |
+| Bandit Level 6 → 7 | ✅ Completed |
+| Bandit Level 7 → 8 | 🎯 Next     |
 
 ---
 
-⭐ If you're also learning cybersecurity, feel free to explore the write-ups and learn along with me.
+**Current Wargame:** Bandit
+**Current Progress:** Level 0 → 7
+**Status:** 🟢 In Progress
+
+> 🔐 Learning cybersecurity one challenge at a time.
