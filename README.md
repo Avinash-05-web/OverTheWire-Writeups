@@ -33,7 +33,7 @@ Bandit focuses on the basics of Linux, command-line usage, and common concepts t
 
 | Wargame   |    Progress | Status         |
 | --------- | ----------: | -------------- |
-| Bandit    | Level 0 → 7 | 🟢 In Progress |
+| Bandit    | Level 0 → 9 | 🟢 In Progress |
 | Leviathan |           — | ⏳ Not Started  |
 | Natas     |           — | ⏳ Not Started  |
 
@@ -41,7 +41,7 @@ Bandit focuses on the basics of Linux, command-line usage, and common concepts t
 
 ## 📂 Repository Structure
 
-```text
+```text id="w6z7gq"
 OverTheWire-Writeups/
 │
 ├── README.md
@@ -55,6 +55,8 @@ OverTheWire-Writeups/
     ├── Level4-5.md
     ├── Level5-6.md
     ├── Level6-7.md
+    ├── Level7-8.md
+    ├── Level8-9.md
     └── ...
 ```
 
@@ -69,8 +71,10 @@ OverTheWire-Writeups/
 | 02 → 03 | Handling spaces and special characters in filenames | [Level 2 → 3](Bandit/Level2-3.md) |
 | 03 → 04 | Finding hidden files                                | [Level 3 → 4](Bandit/Level3-4.md) |
 | 04 → 05 | Identifying human-readable files                    | [Level 4 → 5](Bandit/Level4-5.md) |
-| 05 → 06 | Searching by file size and permissions              | [Level 5 → 6](Bandit/Level5-6.md) |
+| 05 → 06 | Searching by file size and executable status        | [Level 5 → 6](Bandit/Level5-6.md) |
 | 06 → 07 | Searching by user, group, and file size             | [Level 6 → 7](Bandit/Level6-7.md) |
+| 07 → 08 | Searching text with `grep`                          | [Level 7 → 8](Bandit/Level7-8.md) |
+| 08 → 09 | Finding a unique line with `sort` and `uniq`        | [Level 8 → 9](Bandit/Level8-9.md) |
 
 ---
 
@@ -89,6 +93,9 @@ Through the Bandit challenges, I am developing practical experience with:
 * 👤 User ownership
 * 👥 Group ownership
 * 🔑 Authentication and credentials
+* 🔍 Text searching with `grep`
+* 🔢 Sorting and counting data
+* 🔗 Command pipelines
 * 🧩 Command-line problem solving
 * 🛡️ Cybersecurity fundamentals
 
@@ -98,7 +105,7 @@ Through the Bandit challenges, I am developing practical experience with:
 
 Some of the Linux commands and techniques covered so far include:
 
-```text
+```text id="9k0x1a"
 ssh
 ls
 cd
@@ -106,6 +113,9 @@ cat
 find
 file
 xargs
+grep
+sort
+uniq
 ```
 
 As I progress through more levels, additional commands and techniques will be added.
@@ -172,21 +182,23 @@ All challenges documented here are from the OverTheWire wargames platform and ar
 
 ## 🚀 Progress Log
 
-| Milestone          | Status      |
-| ------------------ | ----------- |
-| Bandit Level 0 → 1 | ✅ Completed |
-| Bandit Level 1 → 2 | ✅ Completed |
-| Bandit Level 2 → 3 | ✅ Completed |
-| Bandit Level 3 → 4 | ✅ Completed |
-| Bandit Level 4 → 5 | ✅ Completed |
-| Bandit Level 5 → 6 | ✅ Completed |
-| Bandit Level 6 → 7 | ✅ Completed |
-| Bandit Level 7 → 8 | 🎯 Next     |
+| Milestone           | Status      |
+| ------------------- | ----------- |
+| Bandit Level 0 → 1  | ✅ Completed |
+| Bandit Level 1 → 2  | ✅ Completed |
+| Bandit Level 2 → 3  | ✅ Completed |
+| Bandit Level 3 → 4  | ✅ Completed |
+| Bandit Level 4 → 5  | ✅ Completed |
+| Bandit Level 5 → 6  | ✅ Completed |
+| Bandit Level 6 → 7  | ✅ Completed |
+| Bandit Level 7 → 8  | ✅ Completed |
+| Bandit Level 8 → 9  | ✅ Completed |
+| Bandit Level 9 → 10 | 🎯 Next     |
 
 ---
 
 **Current Wargame:** Bandit
-**Current Progress:** Level 0 → 7
+**Current Progress:** Level 0 → 9
 **Status:** 🟢 In Progress
 
 > 🔐 Learning cybersecurity one challenge at a time.
